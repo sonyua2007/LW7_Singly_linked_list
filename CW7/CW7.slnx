@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../MyListLibrary/MyListLibrary.csproj" />
+  <Project Path="CW7.csproj" />
+</Solution>
