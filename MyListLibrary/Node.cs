@@ -10,7 +10,6 @@ namespace MyListLibrary
         {
             this.Number = number;
             this.Next = null!;
-
         }
         public float Number { get; private set; }
         public Node Next { get; set; }
