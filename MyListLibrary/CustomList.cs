@@ -25,6 +25,17 @@ namespace MyListLibrary
                 throw new IndexOutOfRangeException("Index is not found :(");
             }
         }
+        public CustomList()
+        {
+        }
+
+        public CustomList(params float[] value)
+        {
+            foreach (float item in value)
+            {
+                AddLast(item);
+            }
+        }
 
         public void AddLast(float num)
         {

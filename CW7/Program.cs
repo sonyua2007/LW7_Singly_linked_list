@@ -5,15 +5,19 @@ namespace CW7
     {
         static void Main()
         {
-            CustomList list = new CustomList();
-            list.AddLast(-1.4f);
-            list.AddLast(15.68f);
-            list.AddLast(-2.25f);
-            list.AddLast(6.3f);
-            list.AddLast(0.0f);
-            list.AddLast(18.92f);
+            CustomList list = new CustomList(-1.4f, 15.68f, -2.25f, 6.3f, 0.0f, 18.92f);
 
             Console.WriteLine("Initial list");
+            foreach (float item in list)
+            {
+                Console.Write(item + " -> ");
+            }
+            Console.WriteLine("null");
+
+            Console.Write("\nEnter the the element you want to add: ");
+            float addANumber = float.Parse(Console.ReadLine());
+            list.AddLast(addANumber);
+            Console.WriteLine($"List after adding {addANumber} item");
             foreach (float item in list)
             {
                 Console.Write(item + " -> ");
